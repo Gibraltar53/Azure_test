@@ -1,4 +1,13 @@
 # Starter pipeline
+- task: netsparker-cloud@1
+  inputs:
+    apiConnection: 'Invicti Enterprise API Connection'
+    scanTypes: '0'
+    scanWebSites: '141e9b9b-146b-4261-67b9-af0a0252cdd8'
+    scanWebSitesProfile: 'a015d310-ff99-49bd-25e2-af1c0238c9ba'
+    buildFail: true
+    severity: 'Critical,High'
+    stopScan: true
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
